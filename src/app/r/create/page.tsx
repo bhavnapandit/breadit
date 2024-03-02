@@ -46,7 +46,7 @@ const Page = () => {
           return loginToast()
         }
       }
-      console.log(err)
+     
       toast({
         title: 'There was an error.',
         description: 'Could not create subreddit.',

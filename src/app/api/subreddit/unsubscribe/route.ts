@@ -44,10 +44,7 @@ export async function POST(req: Request) {
 
     await db.subscription.delete({
       where: {
-        userId_subredditId: {
-          subredditId,
-          userId: session.user.id,
-        },
+        id: subscriptionExists.id,
       },
     });
     return new Response(subredditId);
